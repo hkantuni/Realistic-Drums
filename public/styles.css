@@ -1,0 +1,581 @@
+body {
+  text-align: center;
+  background-image: url("images/background.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #dbedf3;
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  text-shadow: black 5px 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+footer {
+  color: #dbedf3;
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  margin-bottom: 0;
+  margin-top: 6vh;
+}
+/* ///Box Frame///// */
+
+.frame {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+/* ///preloading images to prevent flickering///// */
+
+.frame:after {
+  content: url("images/c_2.png") url("images/c_22.png") url("images/c_222.png")
+    url("images/c_2222.png") url("images/c_1.png") url("images/c_11.png")
+    url("images/c_111.png") url("images/c_1111.png") url("images/c3.png")
+    url("images/c33.png") url("images/c333.png") url("images/c3333.png")
+    url("images/ch1.png") url("images/ch11.png") url("images/ch111.png")
+    url("images/ch1111.png") url("images/floor.png") url("images/kick1.png")
+    url("images/kick2.png") url("images/oh1.png") url("images/oh11.png")
+    url("images/oh111.png") url("images/oh1111.png") url("images/r_1.png")
+    url("images/r_11.png") url("images/r_111.png") url("images/r_1111.png")
+    url("images/s_1.png") url("images/s_11.png") url("images/s_111.png")
+    url("images/s_1111.png") url("images/snare.png") url("images/tom.png");
+  visibility: hidden;
+}
+
+/* ///Icons///// */
+
+.drum {
+  border-radius: 50%;
+  background-size: 100%;
+}
+
+/* ////Instruments////// */
+
+.closehh {
+  background-image: url("images/ch1.png");
+  transform: rotate(-28deg);
+  position: absolute;
+  border: none;
+  outline: none;
+  top: 42vh;
+  right: 59vw;
+  width: 20vh;
+  height: 20vh;
+}
+
+.openhh {
+  background-image: url("images/oh1.png");
+  transform: rotate(-28deg);
+  position: absolute;
+  border: none;
+  outline: none;
+  top: 28vh;
+  right: 57vw;
+  width: 20vh;
+  height: 20vh;
+}
+
+.leftcrash {
+  background-image: url("images/c_2.png");
+  transform: rotate(-25deg);
+  position: absolute;
+  border: none;
+  outline: none;
+  top: 7vh;
+  right: 52vw;
+  width: 28vh;
+  height: 28vh;
+  z-index: 3;
+}
+
+.splash {
+  background-image: url("images/s_1.png");
+  transform: rotate(-25deg);
+  position: absolute;
+  border: none;
+  outline: none;
+  top: 5vh;
+  right: 43vw;
+  width: 18vh;
+  height: 18vh;
+  z-index: 3;
+}
+
+.rightcrash {
+  background-image: url("images/c_1.png");
+  transform: rotate(25deg);
+  position: absolute;
+  border: none;
+  outline: none;
+  top: 2vh;
+  right: 27vw;
+  width: 23vh;
+  height: 23vh;
+  z-index: 3;
+}
+
+.ride {
+  background: url("images/c3.png");
+  transform: rotate(25deg);
+  width: 30vh;
+  height: 30vh;
+  position: absolute;
+  border-radius: 50%;
+  background-size: 100%;
+  outline: none;
+  border: none;
+  top: 9vh;
+  right: 12vw;
+  z-index: 3;
+}
+
+.kick1 {
+  background: url("images/kick2.png") no-repeat;
+  width: 37vh;
+  height: 37vh;
+  position: absolute;
+  border-radius: 50%;
+  background-size: 100%;
+  outline: none;
+  border: none;
+  top: 40vh;
+  right: 40.3vw;
+  z-index: 1;
+}
+
+.snare {
+  background: url("images/snare.png") no-repeat;
+  width: 28vh;
+  height: 28vh;
+  position: absolute;
+  border-radius: 50%;
+  background-size: 100%;
+  outline: none;
+  border: none;
+  top: 27vh;
+  right: 33.4vw;
+  z-index: 1;
+}
+
+.kick2 {
+  background: url("images/kick2.png") no-repeat;
+  width: 37vh;
+  height: 37vh;
+  position: absolute;
+  border-radius: 50%;
+  background-size: 100%;
+  outline: none;
+  border: none;
+  top: 40vh;
+  right: 20.8vw;
+}
+
+.tom1 {
+  background: url("images/tom.png") no-repeat;
+  transform: rotate(-25deg);
+  width: 23vh;
+  height: 23vh;
+  position: absolute;
+  border-radius: 50%;
+  background-size: 100%;
+  outline: none;
+  border: none;
+  top: 22vh;
+  right: 45vw;
+  z-index: 2;
+}
+
+.tom2 {
+  background: url("images/tom.png") no-repeat;
+  width: 23vh;
+  height: 23vh;
+  position: absolute;
+  border-radius: 50%;
+  background-size: 100%;
+  outline: none;
+  border: none;
+  top: 10.5vh;
+  right: 34.5vw;
+  z-index: 2;
+}
+
+.tom3 {
+  background: url("images/tom.png") no-repeat;
+  transform: rotate(25deg);
+  width: 23vh;
+  height: 23vh;
+  position: absolute;
+  border-radius: 50%;
+  background-size: 100%;
+  outline: none;
+  border: none;
+  top: 22vh;
+  right: 24vw;
+  z-index: 2;
+}
+
+.floor {
+  background: url("images/floor.png") no-repeat;
+  transform: rotate(30deg);
+  width: 32vh;
+  height: 32vh;
+  position: absolute;
+  border-radius: 50%;
+  background-size: 100%;
+  outline: none;
+  border: none;
+  top: 38vh;
+  right: 4.5vw;
+}
+
+/* ///////Names///// */
+.transparent {
+  font-size: 0;
+}
+
+/* /////pressed/// */
+
+.closehh.pressed {
+  transform: rotate(-28deg);
+  animation: closehh-animation 1.5s;
+}
+.openhh.pressed {
+  transform: rotate(-28deg);
+  animation: openhh-animation 1.5s;
+}
+.leftcrash.pressed {
+  transform: rotate(-25deg);
+  animation: leftcrash-animation 1.5s;
+}
+.splash.pressed {
+  transform: rotate(-25deg);
+  animation: splash-animation 1.5s;
+}
+.rightcrash.pressed {
+  transform: rotate(25deg);
+  animation: rightcrash-animation 1.5s;
+}
+.ride.pressed {
+  transform: rotate(25deg);
+  animation: ride-animation 1.5s;
+}
+.kick1.pressed {
+  animation: kick-animation 0.1s;
+  animation-timing-function: ease-in-out;
+}
+.kick2.pressed {
+  animation: kick-animation 0.1s;
+  animation-timing-function: ease-in-out;
+}
+.tom1.pressed {
+  background-size: 100%;
+  animation: tom1-animation 0.1s;
+  animation-timing-function: ease-in-out;
+}
+.tom2.pressed {
+  animation: kick-animation 0.1s;
+  animation-timing-function: ease-in-out;
+}
+.tom3.pressed {
+  animation: tom3-animation 0.1s;
+  animation-timing-function: ease-in-out;
+}
+.snare.pressed {
+  animation: kick-animation 0.1s;
+  animation-timing-function: ease-in-out;
+}
+
+.floor.pressed {
+  animation: floor-animation 0.1s;
+  animation-timing-function: ease-in-out;
+}
+
+/* //////animation//////// */
+
+@keyframes closehh-animation {
+  from {
+    transform: scale(1.01) rotate(-28deg);
+    filter: blur(0.03em);
+  }
+  33% {
+    transform: scale(1) rotate(-28deg);
+    filter: blur(0.02em);
+  }
+  66% {
+    filter: blur(0.01em) rotate(-28deg);
+    transform: scale(1) rotate(-28deg);
+  }
+}
+
+@keyframes openhh-animation {
+  from {
+    transform: scaleY(1.03) rotate(-29deg);
+    background: url("images/oh1.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(0.03em);
+  }
+  14% {
+    transform: scaleY(0.97) rotate(-28deg);
+    background: url("images/oh11.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  28% {
+    transform: scaleY(1.02) rotate(-31deg);
+    background: url("images/oh111.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  42% {
+    transform: scaleY(0.98) rotate(-28deg);
+    background: url("images/oh1111.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  56% {
+    transform: scaleY(1.01) rotate(-28deg);
+    background: url("images/oh111.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  70% {
+    transform: scaleY(0.99) rotate(-28deg);
+    background: url("images/oh11.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  84% {
+    transform: scaleY(1) rotate(-30deg);
+    background: url("images/oh1.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes leftcrash-animation {
+  from {
+    transform: scaleY(1.04) rotate(-26deg);
+    background: url("images/c_2.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(0.05em);
+  }
+  12% {
+    transform: scaleY(0.89) rotate(-25deg);
+    background: url("images/c_22.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  18% {
+    transform: scaleY(1.09) rotate(-23deg);
+    background: url("images/c_222.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  29% {
+    transform: scaleY(0.97) rotate(-25deg);
+    background: url("images/c_2222.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  40% {
+    transform: scaleY(1.05) rotate(-25deg);
+    background: url("images/c_222.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(0);
+  }
+  51% {
+    transform: scaleY(0.91) rotate(-26deg);
+    background: url("images/c_22.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  62% {
+    transform: scaleY(1.1) rotate(-27deg);
+    background: url("images/c_2.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  73% {
+    transform: scaleY(0.91) rotate(-25deg);
+    background: url("images/c_22.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  84% {
+    transform: scaleY(1.04) rotate(-26deg);
+    background: url("images/c_2.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes splash-animation {
+  from {
+    transform: scaleY(1.1) rotate(-24deg);
+    background: url("images/s_1.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(0.05em);
+  }
+  16% {
+    transform: scaleY(0.92) rotate(-25deg);
+    background: url("images/s_11.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  32% {
+    transform: scaleY(1.06) rotate(-28deg);
+    background: url("images/s_111.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  48% {
+    transform: scaleY(0.94) rotate(-25deg);
+    background: url("images/s_1111.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  64% {
+    transform: scaleY(1.04) rotate(-25deg);
+    background: url("images/s_111.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(0);
+  }
+  80% {
+    transform: scaleY(0.96) rotate(-25deg);
+    background: url("images/s_11.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  94% {
+    transform: scaleY(1.02) rotate(-24deg);
+    background: url("images/s_1.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes rightcrash-animation {
+  from {
+    transform: scaleY(1.02) rotate(26deg);
+    background: url("images/c_1.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(0.05em);
+  }
+  12% {
+    transform: scaleY(0.96) rotate(25deg);
+    background: url("images/c_11.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  18% {
+    transform: scaleY(1.09) rotate(23deg);
+    background: url("images/c_111.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  29% {
+    transform: scaleY(0.97) rotate(25deg);
+    background: url("images/c_1111.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  40% {
+    transform: scaleY(1.02) rotate(25deg);
+    background: url("images/c_111.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(0);
+  }
+  51% {
+    transform: scaleY(0.91) rotate(26deg);
+    background: url("images/c_11.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  62% {
+    transform: scaleY(1.12) rotate(27deg);
+    background: url("images/c_111.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  73% {
+    transform: scaleY(0.93) rotate(25deg);
+    background: url("images/c_11.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  84% {
+    transform: scaleY(1.03) rotate(26deg);
+    background: url("images/c_1.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes ride-animation {
+  from {
+    transform: scaleY(1.12) rotate(24deg);
+    background: url("images/c3.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(0.05em);
+  }
+  12% {
+    transform: scaleY(0.89) rotate(25deg);
+    background: url("images/c33.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  18% {
+    transform: scaleY(1.08) rotate(28deg);
+    background: url("images/c333.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  29% {
+    transform: scaleY(0.9) rotate(25deg);
+    background: url("images/c3333.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  40% {
+    transform: scaleY(1.06) rotate(24deg);
+    background: url("images/c333.png") no-repeat;
+    background-size: 100% 100%;
+    filter: blur(0);
+  }
+  51% {
+    transform: scaleY(0.94) rotate(24deg);
+    background: url("images/c3333.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  62% {
+    transform: scaleY(1.04) rotate(27deg);
+    background: url("images/c333.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  73% {
+    transform: scaleY(0.97) rotate(25deg);
+    background: url("images/c33.png") no-repeat;
+    background-size: 100% 100%;
+  }
+  84% {
+    transform: scaleY(1.02) rotate(26deg);
+    background: url("images/c3.png") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes kick-animation {
+  to {
+    transform: scale(0.95);
+    filter: blur(0.03em);
+  }
+}
+
+@keyframes tom1-animation {
+  to {
+    transform: scale(0.95) rotate(-25deg);
+    filter: blur(0.03em);
+  }
+}
+@keyframes tom3-animation {
+  to {
+    transform: scale(0.95) rotate(25deg);
+    filter: blur(0.03em);
+  }
+}
+@keyframes floor-animation {
+  to {
+    transform: scale(0.95) rotate(25deg);
+    filter: blur(0.03em);
+  }
+}
+@keyframes floor-animation {
+  to {
+    transform: scale(0.95) rotate(30deg);
+    filter: blur(0.03em);
+  }
+}
